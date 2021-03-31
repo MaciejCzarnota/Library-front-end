@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-forms.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/admin">Panel administratora</a>
+                    <a class="navbar-texts navbar-buttons" href="/logout" >Wyloguj</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <div id="page-form">
+        <form name="authorForm" method="post">
+            <span>Dodawanie nowego autora</span>
+            <div style="margin-top: 40px" class="form-warning">Nieprawidłowe dane</div>
+                <div>
+                <label for="author">Nazwa autora: </label><br/>
+                <input type="text" id="author" name="author"/>
+            </div>
+            <div class="form-warning">Nieprawidłowe dane</div>
+            <div>
+                <label for="description">Opis autora: </label><br/>
+                <input type="text" id="description" name="description"/>
+            </div>
+            <div>
+                <button type="submit">Dodaj nowego autora</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>

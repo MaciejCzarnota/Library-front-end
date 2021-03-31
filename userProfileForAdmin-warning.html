@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-panel.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/admin">Panel administratora</a>
+                    <a class="navbar-texts navbar-buttons" href="/logout" >Wyloguj</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-profile">
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <div id="main-left-side">
+        <ul>
+            <li class="user-info-table"><p>ID: 1</p></li>
+            <li class="user-info-table"><p>Nazwa użytkownika: user</p></li>
+            <li class="user-info-table"><p>Email: user@user.pl</p></li>
+            <li class="user-info-table"><p>Numer telefonu: 987654321</p></li>
+            <li class="user-info-table"><p>Imie i nazwisko: Użytkownik pierwszy</p></li>
+            <li class="user-info-table"><p>Ilość obecnie wypożyczanch książek: 1</p></li>
+            <li class="user-info-table" style="border: none"><p>Punkty lojalnościowe: 0</p></li>
+        </ul>
+    </div>
+    <div id="main-right-side" style="padding-top: 0;">
+        <h2>Historia użytkownika</h2>
+        <div>
+            <div id="warning-container">
+                <p style="font-size:38px">Brak rekordów</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

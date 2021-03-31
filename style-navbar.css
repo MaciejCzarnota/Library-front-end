@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Balsamiq';
+    src:  url('fonts/BalsamiqSans-Regular.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: #1EA896;
+    width: 100%;
+    height: 52px;
+    font-family: 'Balsamiq', Fallback, sans-serif;
+    user-select: none;
+}
+
+#header-left-side {
+    line-height: 52px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-buttons {
+    border: 4px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+.navbar-texts {
+    line-height: 52px;
+}
+
+@media only screen and (max-width: 600px) {
+    #user-unlogged-span {
+        display: none
+    }
+}

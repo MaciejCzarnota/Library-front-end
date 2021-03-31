@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-biblioteka</title>
+    <link rel="stylesheet" href="style-forms.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" class="navbar-texts" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/login">Zaloguj się</a>
+                    <span class="navbar-texts" id="user-unlogged-span" href="#">Użytkownik niezalogowany</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main" >
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <div id="page-form">
+        <span>Kryterium wyszukiwania: tytuł książki</span>
+        <form name="searchForm" method="post">
+                <input type="text" placeholder="Kryterium"><br/>
+                <button type="submit">Szukaj</button>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

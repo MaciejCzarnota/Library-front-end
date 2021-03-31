@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-biblioteka</title>
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" class="navbar-texts" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/login">Zaloguj się</a>
+                    <span class="navbar-texts" id="user-unlogged-span" href="#">Użytkownik niezalogowany</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main" >
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <div id="main-container">
+        <div id="main-left-side">
+            <ul>
+                <li class="search-reference"><a href="/search?value=title">Wyszukiwanie po tytule</a></li>
+                <li class="search-reference"><a href="/search?value=author">Wyszukiwanie po autorze</a></li>
+                <li class="search-reference"><a href="/search?value=isbn">Wyszukiwanie po ISBN</a></li>
+            </ul>
+        </div>
+
+
+        <div id="main-right-side">
+            <h2 style="margin-bottom:60px;">Wyszukiwanie książki po tytule</h2>
+            <div>
+                <div id="warning-container">
+                    <p style="font-size:38px">Brak książek pasujących pod dane kryterium</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

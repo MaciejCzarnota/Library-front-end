@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-forms.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/admin">Panel administratora</a>
+                    <a class="navbar-texts navbar-buttons" href="/logout" >Wyloguj</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-book">
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <div id="add-book-form">
+        <form name="bookForm" method="post">
+            <span>Dodawanie nowej książki</span>
+            <div style="margin-top: 40px">
+                    <label for="title">Tytuł książki: </label><br/>
+                    <input type="text" id="title" name="title" />
+            </div>
+            <div>
+                <label for="description">Opis książki: </label><br/>
+                <input type="text" id="description" name="description"/>
+            </div>
+            <div>
+                <label for="authorId1">Autor książki: </label><br/>
+                <select class="form-control" id="authorId1" name="authorId1">
+                    <option value="">----</option>
+                    <option>Autor</option>
+                </select>
+            </div>
+            <div>
+                <label for="authorId2">Drugi autor książki(nieobowiązkowe): </label><br/>
+                <select id="authorId2" name="authorId2">
+                    <option value="">----</option>
+                    <option>Autor</option>
+                </select>
+            </div>
+            <div>
+                <label for="authorId3">Trzeci autor książki(nieobowiązkowe): </label><br/>
+                <select id="authorId3" name="authorId3">
+                    <option value="">----</option>
+                    <option>Autor</option>
+                </select>
+            </div>
+            <div>
+                <label for="genreId1">Pierwszy gatunek: </label><br/>
+                <select id="genreId1" name="genreId1">
+                        <option value="">----</option>
+                        <option>Gatunek</option>
+                </select>
+            </div>
+            <div>
+                <label for="genreId2">Drugi gatunek(nieobowiązkowy): </label><br/>
+                <select id="genreId2" name="genreId2">
+                    <option value="">----</option>
+                    <option>Gatunek</option>
+                </select>
+            </div>
+            <div>
+                <label for="genreId3">Trzeci gatunek(nieobowiązkowy): </label><br/>
+                <select class="form-control" id="genreId3" name="genreId3">
+                    <option value="">----</option>
+                    <option>Gatunek</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">Język książki: </label><br/>
+                <input type="text" id="language" name="language"/>
+            </div>
+            <div>
+                <label for="isbn">ISBN książki: </label><br/>
+                <input type="text" id="isbn" name="isbn"/>
+            </div>
+            <div>
+                <label for="numberOfPages">Ilość stron: </label><br/>
+                <input min=0 type="number" id="numberOfPages" name="numberOfPages"/>
+            </div>
+            <div>
+                <button type="submit">Dodaj nową książkę</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

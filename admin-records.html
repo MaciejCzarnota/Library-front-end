@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-biblioteka</title>
+    <link rel="stylesheet" href="style-panel.css">
+    <link rel="stylesheet" href="style-navbar.css">
+</head>
+<body>
+<div id="header">
+    <div style="padding: 0 25px;">
+        <div>
+            <div>
+                <div style="float: left;">
+                    <a id="header-left-side" class="navbar-texts" href="/">Biblioteka</a>
+                </div>
+            </div>
+            <div>
+                <div style="float: right;">
+                    <a class="navbar-texts navbar-buttons" href="/login">Zaloguj się</a>
+                    <span class="navbar-texts" id="user-unlogged-span" href="#">Użytkownik niezalogowany</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main" >
+    <div style="text-align: center; margin: 10px;">
+        <div onclick="changeMode()" id="modeButton" style="height: 40px; border: 2px solid black; border-radius: 8px; width: 70px;display: inline-block; user-select: none; cursor: pointer;"></div>
+    </div>
+    <ul style="margin: 0; padding: 0; height: 57px">
+        <li class="add-button"><a href="/">Dodaj<br />nowego<br />użytkownika</a></li>
+        <li class="add-button"><a href="/">Dodaj<br />nowy<br />gatunek</a></li>
+        <li class="add-button"><a href="/">Dodaj<br />nowego<br />autora</a></li>
+        <li class="add-button"><a href="/">Dodaj<br />nową<br />książkę</a></li>
+        <li class="add-button"><a href="/">Dodaj<br />nowy<br />e-book</a></li>
+    </ul>
+    <div id="main-container" style="padding-top: 30px;">
+        <div id="main-left-side">
+            <ul>
+                <li class="record-filter"><a href="/">Pokaż wszystkie</a></li>
+                <li class="record-filter"><a href="/">Pokaż rezerwacje</a></li>
+                <li class="record-filter"><a href="/">Pokaż zaakceptowane rezerwacje</a></li>
+                <li class="record-filter"><a href="/">Pokaż aktywne wypożyczenia</a></li>
+                <li class="record-filter"><a href="/">Pokaż zakończone wypożyczenia</a></li>
+                <li class="record-filter"><a href="/">Pokaż anulowane rezerwacje</a></li>
+            </ul>
+        </div>
+
+        <div id="main-right-side">
+            <h2>Obecnie pokazywane: wszystkie</h2>
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Użytkownik</th>
+                        <th>Tytuł</th>
+                        <th>Data rozpoczęcia</th>
+                        <th>Ostateczny termin</th>
+                        <th>Data zakończenia</th>
+                        <th>Status</th>
+                        <th>Naliczona kara</th>
+                        <th>Możliwe akcje</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="">user</a></td>
+                        <td>Quo Vadis</td>
+                        <td>20.04.2020</td>
+                        <td>17.05.2020</td>
+                        <td>14.05.2020</td>
+                        <th>ZAKOŃCZONE</th>
+                        <td>---</td>
+                        <td>Brak</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="">user</a></td>
+                        <td>Quo Vadis</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>REZERWACJA</td>
+                        <td>---</td>
+                        <td>
+                            <button class="cancel-button">Anuluj rezerwację</button><br />
+                            <button class="accept-button">Zaakceptuj rezerwację</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="">user</a></td>
+                        <td>Quo Vadis</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>ZAAKCEPTOWANE</td>
+                        <td>---</td>
+                        <td>
+                            <button class="cancel-button">Anuluj zaakceptowaną rezerwację</button><br />
+                            <button class="accept-button">Aktywuj wypożyczenie</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="">user</a></td>
+                        <td>Quo Vadis</td>
+                        <td>02.05.2020</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>AKTYWNE</td>
+                        <td>---</td>
+                        <td>
+                            <button class="accept-button">Zakończ wypożyczenie</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
